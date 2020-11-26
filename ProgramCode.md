@@ -2,20 +2,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int refillAmount = 1000;
+        int refillAmount = 5;
         // Ввелите сумму, на которую пополняется счет //
-
         int accountAmount = 0;
         //Введите текущую сумму средств на счете //
-
         int bonus = 0;
-
 
         if (refillAmount >=1000) {
             bonus = refillAmount / 100;
-        }
-        else if (refillAmount <1000) {
-            bonus = 0;
         }
 
         int final_amount = accountAmount + refillAmount + bonus;
