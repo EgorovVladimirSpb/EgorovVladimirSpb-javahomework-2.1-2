@@ -2,23 +2,21 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int refill_amount = 1100;
+        int refillAmount = 900;
         // Ввелите сумму, на которую пополняется счет //
-
-        int account_amount = 100;
+        int accountAmount = 0;
         //Введите текущую сумму средств на счете //
+        int bonus = 0;
 
-        int bonus = refill_amount / 100;
 
-
-        if (refill_amount >=1000) {
-            bonus = refill_amount / 100;
+        if (refillAmount >=1000) {
+            bonus = refillAmount / 100;
         }
-        else if (refill_amount <1000) {
+        else if (refillAmount <1000) {
             bonus = 0;
         }
 
-        int final_amount = account_amount + refill_amount + bonus;
+        int final_amount = accountAmount + refillAmount + bonus;
 
         System.out.println("Ваш бонус составил");
         System.out.println(bonus);
